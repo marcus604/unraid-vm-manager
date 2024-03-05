@@ -1,0 +1,8 @@
+version: '3'
+services:
+  vm-manager:
+    image: vm-manager 
+    ports:
+      - "${WEB_UI_PORT}:443"
+    environment:
+      - SERVER_IP=${SERVER_IP}
